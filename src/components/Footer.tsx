@@ -6,12 +6,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 mb-4 inline-block">
-              DevHire
+            <Link href="/" className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-4 inline-block">
+              hyrio
             </Link>
             <p className="text-gray-500 dark:text-gray-400 max-w-md mt-4">
-              We connect top-tier web and mobile app developers with innovative companies. 
-              Elevate your business with world-class freelance engineers.
+              "Hyrio — The Future of Hiring Is Already Here."
             </p>
           </div>
           
@@ -37,7 +36,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="#careers" className="text-base text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400">
-                  Open Positions
+                  Careers
                 </Link>
               </li>
             </ul>
@@ -50,15 +49,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="text-base text-gray-500 dark:text-gray-400 flex items-center gap-2">
                 <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                hello@devhire.com
+                hr@hyrio.co.in
               </li>
               <li className="text-base text-gray-500 dark:text-gray-400 flex items-center gap-2">
                 <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                +1 (555) 123-4567
+                +91 74360 31424
               </li>
               <li className="mt-4">
                 <Link href="#resume" className="text-sm font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300">
-                  Submit Resume &rarr;
+                  Let's Talk &rarr;
                 </Link>
               </li>
             </ul>
@@ -67,7 +66,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; {new Date().getFullYear()} DevHire. All rights reserved.
+            &copy; 2026 Hyrio. All Rights Reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             {/* Social Icons Placeholders */}

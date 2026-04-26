@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,8 +35,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-              DevHire
+            <Link href="/" className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 tracking-tight">
+              hyrio
             </Link>
           </div>
           
@@ -53,6 +54,7 @@ export default function Navbar() {
           </nav>
           
           <div className="hidden md:flex items-center space-x-4">
+            <ThemeToggle />
             <Link
               href="#resume"
               className="inline-flex items-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:shadow-[0_0_25px_rgba(59,130,246,0.5)]"
@@ -62,7 +64,8 @@ export default function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center md:hidden space-x-2">
+            <ThemeToggle />
             <button
               type="button"
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"

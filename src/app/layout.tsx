@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevHire - Hire Top Web & Mobile Developers",
-  description: "Connect with world-class freelance engineers to elevate your business. Submit your resume to join our network.",
+  title: "Hyrio - Smarter Hiring. Faster Teams. Zero Compromise",
+  description: "AI-powered Recruitment agency. The right person. The right role. Delivered faster than any traditional recruiter ever could.",
 };
 
 export default function RootLayout({
@@ -25,16 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
-    >
-      <body className="min-h-full flex flex-col font-sans">
-        <Navbar />
-        <main className="flex-grow pt-20">
-          {children}
-        </main>
-        <Footer />
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-[#020617] text-gray-900 dark:text-gray-100`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
